@@ -50,16 +50,16 @@ namespace ServiceStack.SP.Features.ServiceStack.SP.WebConfig
   ";
             webApp.WebConfigModifications.Add(locationMod);
 
-
-            SPWebConfigModification moduleMod = new SPWebConfigModification();
-            moduleMod.Path = "configuration/system.webServer/modules";
-            moduleMod.Name = "add[@name='ServiceStackHandler']";
-            moduleMod.Sequence = 0;
-            locationMod.Owner = "ServiceStack.SP";
-            locationMod.Type = SPWebConfigModification.SPWebConfigModificationType.EnsureChildNode;
-            moduleMod.Value = @"
-           <add name='ServiceStackHandler' type='ServiceStack.SP.ServiceStackHandler, ServiceStack.SP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7beed51edcd64865' />";
-            webApp.WebConfigModifications.Add(moduleMod);
+            //removed in favor of web activator
+//            SPWebConfigModification moduleMod = new SPWebConfigModification();
+//            moduleMod.Path = "configuration/system.webServer/modules";
+//            moduleMod.Name = "add[@name='ServiceStackHandler']";
+//            moduleMod.Sequence = 0;
+//            locationMod.Owner = "ServiceStack.SP";
+//            locationMod.Type = SPWebConfigModification.SPWebConfigModificationType.EnsureChildNode;
+//            moduleMod.Value = @"
+//           <add name='ServiceStackHandler' type='ServiceStack.SP.ServiceStackHandler, ServiceStack.SP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7beed51edcd64865' />";
+//            webApp.WebConfigModifications.Add(moduleMod);
 
             webApp.Update();
             WaitForOneTimeJobToFinish(webApp.Farm);

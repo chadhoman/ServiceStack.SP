@@ -7,6 +7,7 @@ using System.Web;
 
 namespace ServiceStack.SP
 {
+    [Obsolete]
     public abstract class AApplicationStartHandler : IHttpModule
     {
 

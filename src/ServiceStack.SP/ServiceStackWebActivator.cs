@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace ServiceStack.SP
 {
-    [Obsolete]
-    public class ServiceStackHandler : AApplicationStartHandler
+    public class ServiceStackWebActivator
     {
-        protected override void OnStart()
+        public static void Initialize()
         {
             ServiceStackAppHost.Start();
         }

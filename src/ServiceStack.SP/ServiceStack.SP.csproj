@@ -93,6 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceStackAppHost.cs" />
     <Compile Include="ServiceStackHandler.cs" />
+    <Compile Include="ServiceStackWebActivator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\ServiceStack.SP.WebConfig\ServiceStack.SP.WebConfig.feature">
