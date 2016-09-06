@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" solutionId="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" resetWebServer="false" sharePointProductVersion="15.0" name="ServiceStack.SP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ServiceStack.Api.Swagger.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Api.Swagger.Signed.4.5.0\lib\net45\ServiceStack.Api.Swagger.dll" />
+    <customAssembly location="ServiceStack.Common.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Common.Signed.4.5.0\lib\net45\ServiceStack.Common.dll" />
+    <customAssembly location="ServiceStack.Interfaces.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Interfaces.4.5.0\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll" />
+    <customAssembly location="ServiceStack.OrmLite.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.OrmLite.Signed.4.5.0\lib\net45\ServiceStack.OrmLite.dll" />
+    <customAssembly location="ServiceStack.Redis.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Redis.Signed.4.5.0\lib\net45\ServiceStack.Redis.dll" />
+    <customAssembly location="ServiceStack.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Signed.4.5.0\lib\net45\ServiceStack.dll" />
+    <customAssembly location="ServiceStack.Text.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\ServiceStack.Text.Signed.4.5.0\lib\net45\ServiceStack.Text.dll" />
+  </assemblies>
   <features>
     <featureReference itemId="023fa1c0-9588-4341-bf18-f51ddb1cceb6" />
   </features>
