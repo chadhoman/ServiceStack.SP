@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" 
-        solutionId="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="ServiceStack.SP"
-        sharePointProductVersion="15.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" solutionId="b7088e4d-fe4b-4fb5-bd2c-028d7902577b" resetWebServer="false" sharePointProductVersion="15.0" name="ServiceStack.SP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="023fa1c0-9588-4341-bf18-f51ddb1cceb6" />
+  </features>
 </package>
